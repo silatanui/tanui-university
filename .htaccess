@@ -1,0 +1,4 @@
+DirectoryIndex index.php
+RewriteEngine On
+RewriteRule ^index\.html$ index.php [R=301,L]
+RewriteRule ^(.+)\.html$ $1.php [R=301,L]
