@@ -14,11 +14,29 @@ The Moodle / Tanui LMS codebase is intentionally excluded. It is large and bette
 
 ## Local / cPanel setup
 
-1. Upload the contents of this folder to your web root (or a subdirectory).
-2. Ensure PHP is enabled (PHP 8+ recommended).
-3. Open `index.php` in the browser.
+1. Ensure PHP is enabled (PHP 8+ recommended).
+2. Open `index.php` in the browser.
 
 Apache: `DirectoryIndex index.php` is set in `.htaccess`, with redirects from old `.html` URLs.
+
+### Lightweight cPanel deploy
+
+On **localhost**, images/video load from `assets/`.
+
+On **cPanel / any non-local host**, images, brand mark, and the demo video load from GitHub via jsDelivr:
+
+`https://cdn.jsdelivr.net/gh/silatanui/tanui-university@main/assets/...`
+
+So you can upload mainly:
+
+- `*.php` and `includes/`
+- `assets/css/` and `assets/js/` (small)
+
+You do **not** need to upload `assets/images/`, `assets/video/`, or `assets/brand/` to save space. Keep those in GitHub only.
+
+After changing media files, push to GitHub so the CDN picks them up. If a file looks stale, purge jsDelivr for that path or wait for cache expiry.
+
+To force CDN links while testing on XAMPP, set `$FORCE_CDN_MEDIA = true` in `includes/init.php`.
 
 ## Demo video
 

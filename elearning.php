@@ -21,10 +21,10 @@ require __DIR__ . '/includes/header.php';
           controls
           playsinline
           preload="metadata"
-          poster="<?= h(asset('video/elearning-poster.png')) ?>"
+          poster="<?= h(media('video/elearning-poster.png')) ?>"
           aria-label="Tanui University E-Learning platform demo video"
         >
-          <source src="<?= h(asset('video/tanui-lms-demo.mp4')) ?>" type="video/mp4">
+          <source src="<?= h(media('video/tanui-lms-demo.mp4')) ?>" type="video/mp4">
           Your browser does not support embedded video.
         </video>
       </div>

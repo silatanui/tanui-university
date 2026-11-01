@@ -17,7 +17,7 @@ $bodyClass = $bodyClass ?? '';
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="<?= h(asset('css/styles.css')) ?>">
-  <link rel="icon" href="<?= h(asset('brand/tanui-shield.jpg')) ?>">
+  <link rel="icon" href="<?= h(media('brand/tanui-shield.jpg')) ?>">
 </head>
 <body<?= $bodyClass !== '' ? ' class="' . h($bodyClass) . '"' : '' ?>>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -41,7 +41,7 @@ $bodyClass = $bodyClass ?? '';
   <header class="site-header" data-header>
     <div class="site-header__inner">
       <a class="brand" href="<?= h(page('index.php')) ?>" aria-label="Tanui University home">
-        <img class="brand__mark" src="<?= h(asset('brand/tanui-shield.jpg')) ?>" alt="">
+        <img class="brand__mark" src="<?= h(media('brand/tanui-shield.jpg')) ?>" alt="">
         <span class="brand__text">
           <span class="brand__name">Tanui</span>
           <span class="brand__suffix">University</span>

@@ -5,7 +5,7 @@ declare(strict_types=1);
     <div class="container site-footer__grid">
       <div>
         <a class="brand" href="<?= h(page('index.php')) ?>" aria-label="Tanui University home">
-          <img class="brand__mark" src="<?= h(asset('brand/tanui-shield.jpg')) ?>" alt="">
+          <img class="brand__mark" src="<?= h(media('brand/tanui-shield.jpg')) ?>" alt="">
           <span class="brand__text">
             <span class="brand__name">Tanui</span>
             <span class="brand__suffix">University</span>

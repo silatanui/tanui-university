@@ -7,7 +7,7 @@ require __DIR__ . '/includes/header.php';
 <main id="main">
     <section class="hero" id="top">
       <div class="hero__media" aria-hidden="true">
-        <img src="assets/images/hero-campus.png" alt="" data-img-fallback>
+        <img src="<?= h(media('images/hero-campus.png')) ?>" alt="" data-img-fallback>
         <div class="hero__fallback" hidden></div>
       </div>
       <div class="hero__content">
@@ -29,7 +29,7 @@ require __DIR__ . '/includes/header.php';
         </div>
         <div class="split reveal">
           <div class="split__media">
-            <img src="assets/images/academics-lab.png" alt="" data-img-fallback>
+            <img src="<?= h(media('images/academics-lab.png')) ?>" alt="" data-img-fallback>
           </div>
           <div class="split__copy">
             <h3>Schools built around modern practice</h3>
@@ -72,15 +72,15 @@ require __DIR__ . '/includes/header.php';
         </div>
         <div class="mosaic reveal">
           <figure class="mosaic__item">
-            <img src="assets/images/campus-library.png" alt="" data-img-fallback>
+            <img src="<?= h(media('images/campus-library.png')) ?>" alt="" data-img-fallback>
             <figcaption class="mosaic__caption">Library and quiet study</figcaption>
           </figure>
           <figure class="mosaic__item">
-            <img src="assets/images/student-life.png" alt="" data-img-fallback>
+            <img src="<?= h(media('images/student-life.png')) ?>" alt="" data-img-fallback>
             <figcaption class="mosaic__caption">Student life between classes</figcaption>
           </figure>
           <figure class="mosaic__item">
-            <img src="assets/images/research-focus.png" alt="" data-img-fallback>
+            <img src="<?= h(media('images/research-focus.png')) ?>" alt="" data-img-fallback>
             <figcaption class="mosaic__caption">Research and making</figcaption>
           </figure>
         </div>
@@ -89,7 +89,7 @@ require __DIR__ . '/includes/header.php';
 
     <section class="admissions" id="admissions">
       <div class="admissions__media" aria-hidden="true">
-        <img src="assets/images/admissions-path.png" alt="" data-img-fallback>
+        <img src="<?= h(media('images/admissions-path.png')) ?>" alt="" data-img-fallback>
         <div class="admissions__fallback" hidden></div>
       </div>
       <div class="admissions__content reveal">
@@ -113,7 +113,7 @@ require __DIR__ . '/includes/header.php';
         <div class="news-grid">
           <article class="news-item reveal">
             <div class="news-item__media">
-              <img src="assets/images/news-thumb-1.png" alt="" data-img-fallback>
+              <img src="<?= h(media('images/news-thumb-1.png')) ?>" alt="" data-img-fallback>
             </div>
             <time datetime="2026-10-20">20 Oct 2026</time>
             <h3>New machine learning pathway opens for undergraduates</h3>
@@ -121,7 +121,7 @@ require __DIR__ . '/includes/header.php';
           </article>
           <article class="news-item reveal">
             <div class="news-item__media">
-              <img src="assets/images/news-thumb-2.png" alt="" data-img-fallback>
+              <img src="<?= h(media('images/news-thumb-2.png')) ?>" alt="" data-img-fallback>
             </div>
             <time datetime="2026-09-28">28 Sep 2026</time>
             <h3>Campus library hours extended through exam season</h3>
@@ -129,7 +129,7 @@ require __DIR__ . '/includes/header.php';
           </article>
           <article class="news-item reveal">
             <div class="news-item__media">
-              <img src="assets/images/news-thumb-3.png" alt="" data-img-fallback>
+              <img src="<?= h(media('images/news-thumb-3.png')) ?>" alt="" data-img-fallback>
             </div>
             <time datetime="2026-09-05">5 Sep 2026</time>
             <h3>E-Learning platform launches for enrolled students</h3>

@@ -18,7 +18,7 @@ require __DIR__ . '/includes/header.php';
         <div class="news-grid">
           <article class="news-item">
             <div class="news-item__media">
-              <img src="assets/images/news-thumb-1.png" alt="" data-img-fallback>
+              <img src="<?= h(media('images/news-thumb-1.png')) ?>" alt="" data-img-fallback>
             </div>
             <time datetime="2026-10-20">20 Oct 2026</time>
             <h3>New machine learning pathway opens for undergraduates</h3>
@@ -26,7 +26,7 @@ require __DIR__ . '/includes/header.php';
           </article>
           <article class="news-item">
             <div class="news-item__media">
-              <img src="assets/images/news-thumb-2.png" alt="" data-img-fallback>
+              <img src="<?= h(media('images/news-thumb-2.png')) ?>" alt="" data-img-fallback>
             </div>
             <time datetime="2026-09-28">28 Sep 2026</time>
             <h3>Campus library hours extended through exam season</h3>
@@ -34,7 +34,7 @@ require __DIR__ . '/includes/header.php';
           </article>
           <article class="news-item">
             <div class="news-item__media">
-              <img src="assets/images/news-thumb-3.png" alt="" data-img-fallback>
+              <img src="<?= h(media('images/news-thumb-3.png')) ?>" alt="" data-img-fallback>
             </div>
             <time datetime="2026-09-05">5 Sep 2026</time>
             <h3>E-Learning platform launches for enrolled students</h3>
